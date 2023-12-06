@@ -5,6 +5,8 @@ const router = express.Router();
 
 // get the all the list of users
 router.get("/users", userController.getAllUsers)
+router.post("/user", userController.createUser)
+router.put("/user/edit/:id", userController.updateUser)
 
 
 export = router

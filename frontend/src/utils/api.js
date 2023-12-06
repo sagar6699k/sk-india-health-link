@@ -1,16 +1,12 @@
 import axios from "axios";
 
-const BASE_API = "https://wayfair.p.rapidapi.com";
+const BASE_API = "";
 
 export const requestFromAPI = async (method, url, params) => {
     const options = {
         method: `${method}`,
         url: `${BASE_API}/${url}`,
-        params: params,
-        headers: {
-            "X-RapidAPI-Key": "9ca5180883mshfa08791d83ebd94p18f2a3jsnc2619f60f80c",
-            "X-RapidAPI-Host": "wayfair.p.rapidapi.com",
-        },
+        params: params
     };
 
     try {
