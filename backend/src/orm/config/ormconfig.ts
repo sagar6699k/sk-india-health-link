@@ -8,7 +8,7 @@ const config: DataSourceOptions = {
     password: "sagar6699",
     database: "testDB",
     synchronize: true,
-    logging: true,
+    logging: false,
     entities: ["src/entities/**/*.{ts,js}"]
 }
 
